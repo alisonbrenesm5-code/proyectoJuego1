@@ -30,18 +30,22 @@
         {
             helpProvider1 = new HelpProvider();
             panel1 = new Panel();
-            label1 = new Label();
-            n1 = new Label();
-            op = new Label();
-            n2 = new Label();
-            tresultado = new Label();
+            baccapetar = new Button();
+            tresultado = new TextBox();
             label3 = new Label();
+            res = new Label();
+            n2 = new Label();
+            op = new Label();
+            n1 = new Label();
+            label1 = new Label();
             label2 = new Label();
             radioButton1 = new RadioButton();
             radioButton2 = new RadioButton();
             label4 = new Label();
             label5 = new Label();
             label6 = new Label();
+            lerrores = new Label();
+            laciertos = new Label();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -49,8 +53,10 @@
             // 
             panel1.BackColor = Color.FromArgb(255, 192, 192);
             panel1.BorderStyle = BorderStyle.Fixed3D;
-            panel1.Controls.Add(label3);
+            panel1.Controls.Add(baccapetar);
             panel1.Controls.Add(tresultado);
+            panel1.Controls.Add(label3);
+            panel1.Controls.Add(res);
             panel1.Controls.Add(n2);
             panel1.Controls.Add(op);
             panel1.Controls.Add(n1);
@@ -58,6 +64,69 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(586, 370);
             panel1.TabIndex = 0;
+            // 
+            // baccapetar
+            // 
+            baccapetar.Location = new Point(20, 251);
+            baccapetar.Name = "baccapetar";
+            baccapetar.Size = new Size(353, 81);
+            baccapetar.TabIndex = 6;
+            baccapetar.Text = "Acceptar";
+            baccapetar.UseVisualStyleBackColor = true;
+            // 
+            // tresultado
+            // 
+            tresultado.Location = new Point(18, 166);
+            tresultado.Name = "tresultado";
+            tresultado.Size = new Size(150, 31);
+            tresultado.TabIndex = 5;
+            // 
+            // label3
+            // 
+            label3.BorderStyle = BorderStyle.FixedSingle;
+            label3.Font = new Font("Segoe UI Semibold", 14F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            label3.Location = new Point(20, 14);
+            label3.Name = "label3";
+            label3.Size = new Size(353, 38);
+            label3.TabIndex = 4;
+            label3.Text = "Digite el resultado:";
+            // 
+            // res
+            // 
+            res.BorderStyle = BorderStyle.FixedSingle;
+            res.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            res.Location = new Point(257, 92);
+            res.Name = "res";
+            res.Size = new Size(53, 38);
+            res.TabIndex = 3;
+            res.Text = "=?";
+            // 
+            // n2
+            // 
+            n2.BorderStyle = BorderStyle.FixedSingle;
+            n2.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            n2.Location = new Point(175, 92);
+            n2.Name = "n2";
+            n2.Size = new Size(33, 38);
+            n2.TabIndex = 2;
+            // 
+            // op
+            // 
+            op.BorderStyle = BorderStyle.FixedSingle;
+            op.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            op.Location = new Point(98, 92);
+            op.Name = "op";
+            op.Size = new Size(33, 38);
+            op.TabIndex = 1;
+            // 
+            // n1
+            // 
+            n1.BorderStyle = BorderStyle.FixedSingle;
+            n1.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            n1.Location = new Point(20, 92);
+            n1.Name = "n1";
+            n1.Size = new Size(33, 38);
+            n1.TabIndex = 0;
             // 
             // label1
             // 
@@ -69,54 +138,6 @@
             label1.Size = new Size(278, 47);
             label1.TabIndex = 1;
             label1.Text = "Juego Aritmetica";
-            // 
-            // n1
-            // 
-            n1.BorderStyle = BorderStyle.FixedSingle;
-            n1.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            n1.Location = new Point(20, 92);
-            n1.Name = "n1";
-            n1.Size = new Size(33, 38);
-            n1.TabIndex = 0;
-            // 
-            // op
-            // 
-            op.BorderStyle = BorderStyle.FixedSingle;
-            op.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            op.Location = new Point(98, 92);
-            op.Name = "op";
-            op.Size = new Size(33, 38);
-            op.TabIndex = 1;
-            // 
-            // n2
-            // 
-            n2.BorderStyle = BorderStyle.FixedSingle;
-            n2.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            n2.Location = new Point(175, 92);
-            n2.Name = "n2";
-            n2.Size = new Size(33, 38);
-            n2.TabIndex = 2;
-            // 
-            // tresultado
-            // 
-            tresultado.BorderStyle = BorderStyle.FixedSingle;
-            tresultado.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            tresultado.Location = new Point(257, 92);
-            tresultado.Name = "tresultado";
-            tresultado.Size = new Size(53, 38);
-            tresultado.TabIndex = 3;
-            tresultado.Text = "=?";
-           
-            // 
-            // label3
-            // 
-            label3.BorderStyle = BorderStyle.FixedSingle;
-            label3.Font = new Font("Segoe UI Semibold", 14F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            label3.Location = new Point(20, 14);
-            label3.Name = "label3";
-            label3.Size = new Size(353, 38);
-            label3.TabIndex = 4;
-            label3.Text = "Digite el resultado:";
             // 
             // label2
             // 
@@ -157,7 +178,6 @@
             label4.Size = new Size(80, 25);
             label4.TabIndex = 5;
             label4.Text = "Puntaje";
-          
             // 
             // label5
             // 
@@ -176,7 +196,24 @@
             label6.Size = new Size(87, 25);
             label6.TabIndex = 7;
             label6.Text = "Aciertos";
-            
+            // 
+            // lerrores
+            // 
+            lerrores.AutoSize = true;
+            lerrores.Location = new Point(29, 150);
+            lerrores.Name = "lerrores";
+            lerrores.Size = new Size(23, 25);
+            lerrores.TabIndex = 8;
+            lerrores.Text = "0";
+            // 
+            // laciertos
+            // 
+            laciertos.AutoSize = true;
+            laciertos.Location = new Point(26, 310);
+            laciertos.Name = "laciertos";
+            laciertos.Size = new Size(23, 25);
+            laciertos.TabIndex = 9;
+            laciertos.Text = "0";
             // 
             // Form1
             // 
@@ -184,6 +221,8 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(255, 192, 192);
             ClientSize = new Size(969, 567);
+            Controls.Add(laciertos);
+            Controls.Add(lerrores);
             Controls.Add(label6);
             Controls.Add(label5);
             Controls.Add(label4);
@@ -196,6 +235,7 @@
             Name = "Form1";
             Text = "Juego Aritmetica";
             panel1.ResumeLayout(false);
+            panel1.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -208,7 +248,7 @@
         private Label n1;
         private Label n2;
         private Label op;
-        private Label tresultado;
+        private Label res;
         private Label label3;
         private Label label2;
         private RadioButton radioButton1;
@@ -216,5 +256,9 @@
         private Label label4;
         private Label label5;
         private Label label6;
+        private Button baccapetar;
+        private TextBox tresultado;
+        private Label lerrores;
+        private Label laciertos;
     }
 }

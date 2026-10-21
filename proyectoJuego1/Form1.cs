@@ -6,7 +6,7 @@ namespace proyectoJuego1
         int opee = 0, limite = 11;
         char operador = ' ';
 
-     
+
         public Form1()
         {
             InitializeComponent();
@@ -46,6 +46,19 @@ namespace proyectoJuego1
         {
             //Llama aquí el método o código que genera los números
             Seleccion_Operacion(); // O el nombre del método que usa tu profe
+
+
+            if (float.Parse(tresultado.Text).Equals(resultado))
+            {
+                MessageBox.Show("Correcto");
+                laciertos.Text = (int.Parse(laciertos.Text) + 1).ToString();
+            }
+            else
+            {
+                MessageBox.Show("Incorrecto");
+                lerrores.Text = (int.Parse(lerrores.Text) + 1).ToString();
+            }
+            Seleccion_Operacion();
         }
     }
 }
